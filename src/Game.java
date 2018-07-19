@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Game {
 
@@ -15,7 +16,17 @@ public class Game {
                     for (int i = 0; i < playerOne.playerHand.size(); i++){
                         System.out.println("Your hand: ");
                         System.out.println("");
-                        System.out.println(playerOne.playerHand.get(i).name);
+                        System.out.println("Card index: " + i);
+                        System.out.println("Name: " + playerOne.playerHand.get(i).name);
+                        System.out.println("Cost: " + playerOne.playerHand.get(i).chiCost);
+                        System.out.println("School" + playerOne.playerHand.get(i).school);
+                        System.out.println("Damage effect: " + playerOne.playerHand.get(i).damageEffect.damageAmount);
+                        System.out.println("");
+                        System.out.print("Enter index of card you wish to play: ");
+                        Scanner input = new Scanner(System.in);
+                        int chosenIndex = input.nextInt();
+                        activePlayer.playCard(chosenIndex);
+
                     }
 
                 }
