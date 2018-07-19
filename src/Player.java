@@ -14,4 +14,8 @@ public class Player {
     public Player(){
     }
 
+    public void playCard(int indexOfCard){
+
+    }
+
 }
