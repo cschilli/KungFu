@@ -1,6 +1,10 @@
 public class DamageEffect extends CardEffectAbstract {
 
-    int damageAmount;
+    private int damageAmount;
+
+    public int getDamage(){
+        return this.damageAmount;
+    }
 
     public DamageEffect(int damageAmount){
         this.damageAmount = damageAmount;

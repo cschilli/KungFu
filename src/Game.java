@@ -26,7 +26,8 @@ public class Game {
                         System.out.println("Name: " + playerOne.playerHand.get(i).name);
                         System.out.println("Cost: " + playerOne.playerHand.get(i).chiCost);
                         System.out.println("School: " + playerOne.playerHand.get(i).school);
-                        System.out.println("Damage effect: " + playerOne.playerHand.get(i));
+                        System.out.println("Damage effect: " + playerOne.playerHand.get(i).getEffect().getDamage());
+                        System.out.println("Damage effect: " + playerOne.playerHand.get(i).getEffect().getAbstractRandomNumberVariable());
                         System.out.println("");
                     }
                     System.out.print("Enter index of card you wish to play: ");
