@@ -3,11 +3,11 @@ public class Card {
     int chiCost;
     String name;
     String school;
-    DamageEffect damageEffect;
+    CardEffectAbstract effect;
 
-    public Card(String name, DamageEffect damageEffect, int chiCost, String school){
+    public Card(String name, CardEffectAbstract effect, int chiCost, String school){
         this.name = name;
-        this.damageEffect = damageEffect;
+        this.effect = effect;
         this.chiCost = chiCost;
         this.school = school;
     }
